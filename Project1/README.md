@@ -6,7 +6,7 @@ Suggest appropriate filters to isolate the following frequency components from t
 
 **Input Signal:** The input signal is a sum of sine waves with the following frequencies
 
-_Input Signal=A_1⋅sin⁡(2π⋅100⋅t)+A_2⋅sin⁡(2π⋅200⋅t)+A_3⋅sin⁡(2π⋅300⋅t)+A_4⋅sin⁡(2π⋅400⋅t)_
+_Input Signal_ $$=A_1⋅sin⁡(2\pi⋅100⋅t)+A_2⋅sin⁡(2\pi⋅200⋅t)+A_3⋅sin⁡(2\pi⋅300⋅t)+A_4⋅sin⁡(2\pi⋅400⋅t)$$
 
 |Frequency Component|Filter Type|Cutoff Frequency/Frequencies|
 | :--- | :--- | :--- |
