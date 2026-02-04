@@ -1,6 +1,6 @@
 Filter Design for Signal Frequency Components
 =
-## Task:
+**Task:**
 
 Suggest appropriate filters to isolate the following frequency components from the input signal. You will need to decide on the filter type (Low Pass, High Pass, Band Pass, or Band Stop) and specify the cutoff frequency or frequencies.
 
