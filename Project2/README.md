@@ -3,7 +3,7 @@ Researching Wireless Products and Their Manufacturers
 In today's competitive job market, wireless technicians and engineers must have a broad understanding of the products available in the industry, including who manufactures them. 
 
 **Task:** 
---
+
 Using web research, identify one manufacturer (not distributors or resellers) of the wireless products listed below. For each product, provide a link to the manufacturer's page with detailed information. Then, write two sentences describing the product, including its purpose and any notable features.
 
 1) LoRaWAN Gateway
