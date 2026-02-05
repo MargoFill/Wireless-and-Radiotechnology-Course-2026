@@ -7,9 +7,9 @@ In today's competitive job market, wireless technicians and engineers must have 
 Using web research, identify one manufacturer (not distributors or resellers) of the wireless products listed below. For each product, provide a link to the manufacturer's page with detailed information. Then, write two sentences describing the product, including its purpose and any notable features.
 
 1) LoRaWAN Gateway
- 	*Manufacturer: Kerlink
- 	*Link: https://www.kerlink.com/iot-solutions/iot-gateways/wirnet-indoor-lorawan-gateways/
- 	*Description: LoRaWAN is a Low Power Wide Area Network (LPWAN) protocol, built on top of Semtech’s LoRa wireless RF and promoted by the LoRa Alliance, that supports long range, low-cost, mobile, energy-efficient, deep indoor penetration and secure end-to-end bi-directional communication for Internet of Things (IoT) and Machine to Machine (M2M) applications. Running on unlicensed ISM frequencies worldwide, this connectivity is specifically dedicated to IoT use cases and allows cost efficient deployments and operations for both public or private networks. 
+ 	Manufacturer: Kerlink
+ 	Link: https://www.kerlink.com/iot-solutions/iot-gateways/wirnet-indoor-lorawan-gateways/
+ 	Description: LoRaWAN is a Low Power Wide Area Network (LPWAN) protocol, built on top of Semtech’s LoRa wireless RF and promoted by the LoRa Alliance, that supports long range, low-cost, mobile, energy-efficient, deep indoor penetration and secure end-to-end bi-directional communication for Internet of Things (IoT) and Machine to Machine (M2M) applications. Running on unlicensed ISM frequencies worldwide, this connectivity is specifically dedicated to IoT use cases and allows cost efficient deployments and operations for both public or private networks. 
 2) Zigbee Module
  	Manufacturer: Digi International
  	Link: https://www.digi.com/products/browse/zigbee
@@ -42,6 +42,8 @@ Using web research, identify one manufacturer (not distributors or resellers) of
  	Manufacturer: Fibocom
  	Link: https://www.fibocom.com/en/CommunicationSeries/index_itemid_2570.html
  	Description: A 5G IoT module is a communication component that enables IoT devices to connect to 5G cellular networks with high speed, low latency, and massive device support. It’s used in applications like smart manufacturing, autonomous systems, and advanced asset tracking that require real-time data and reliable connectivity.
+
+
 
 
 
