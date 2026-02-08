@@ -9,7 +9,7 @@ Datasheet link: https://semtech.my.salesforce.com/sfc/p/#E0000000JelG/a/2R000000
 
 Short explanation of each RF block:
 --
-__1) Information Source / MCU__
+_1) Information Source / MCU_
 
 The SX1276 itself is not a microcontroller — it is a transceiver IC.
 
