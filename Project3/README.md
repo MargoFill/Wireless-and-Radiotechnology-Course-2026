@@ -9,7 +9,7 @@ Datasheet link: https://semtech.my.salesforce.com/sfc/p/#E0000000JelG/a/2R000000
 
 Short explanation of each RF block:
 --
-✅ 1) Information Source / MCU
+1) Information Source / MCU
 
 The SX1276 itself is not a microcontroller — it is a transceiver IC.
 
@@ -17,7 +17,7 @@ An external MCU (e.g., STM32, AVR, etc.) normally provides data to send and proc
 
 Role: Data flow and system control; interfaces to SX1276 via SPI.
 
-✅ 2) RF Transceiver (Tx/Rx functionality)
+2) RF Transceiver (Tx/Rx functionality)
 
 The core of the SX1276 is a half-duplex RF transceiver that integrates both transmit and receive chains covering ~137–1020 MHz.
 
@@ -28,7 +28,7 @@ In receive mode, the RF signal is captured and down-converted; in transmit mode,
 Signal Flow: Antenna → LNA/mixer → demodulator → digital baseband (Rx)
 Tx: digital baseband → modulator → up-converter → PA → antenna.
 
-✅ 3) Modulation / Demodulation (Conceptual)
+3) Modulation / Demodulation (Conceptual)
 
 The SX1276 includes digital modulation/demodulation for both LoRa and legacy schemes (FSK/OOK).
 
@@ -41,7 +41,7 @@ Modulation happens digitally within the transceiver modem block, controlled by M
 Conceptually: Bits → digital modulator (LoRa/FSK/OOK) → RF waveform for Tx;
 Reverse in Rx.
 
-✅ 4) Power Amplifier (PA)
+4) Power Amplifier (PA)
 
 The SX1276 integrates multiple PAs with different outputs:
 • PA_HF/LF: ~ +14 dBm for normal output.
@@ -51,7 +51,7 @@ PA is part of the transmit chain, boosting the RF signal before the antenna.
 
 PA Supply: Dedicated pin and internal bias circuitry (VR_PA).
 
-✅ 5) Low Noise Amplifier (LNA)
+5) Low Noise Amplifier (LNA)
 
 The receive chain starts with an integrated LNA to amplify weak incoming signals with low added noise.
 
@@ -59,7 +59,7 @@ LNA ensures sensitivity (down to ~-148 dBm) by boosting the RF before further pr
 
 Role: Improves Rx sensitivity and reduces receiver noise floor.
 
-✅ 6) RF Filtering / Matching Network
+6) RF Filtering / Matching Network
 
 Internally, the SX1276 has implicit RF front-end filtering and matching tailored to frequency bands.
 
@@ -69,7 +69,7 @@ External filters (e.g., SAW/ceramic) are often added for regulatory compliance a
 
 Note: The datasheet shows internal RF blocks; actual antenna match networks are external.
 
-✅ 7) Antenna Interface
+7) Antenna Interface
 
 The final RF output from PA and the LNA receive input are typically connected to a common antenna node via a T/R switch or matching network in the surrounding hardware design.
 
@@ -77,7 +77,7 @@ Pins like RFO_LF / RFO_HF / PA_BOOST are connected to the external RF trace → 
 
 Function: Physical connection to air for RF transmission/reception.
 
-✅ 8) Power Supply for RF Section
+8) Power Supply for RF Section
 
 The SX1276 has several supply pins and internal regulation:
 • VBAT_RF / VBAT_ANA — analog/RF supplies.
