@@ -2,51 +2,43 @@ clc;
 close all;
 clear all;
 
-% Input bounds
 tmin = input('The lower bound of theta in degree= ');
 tmax = input('The upper bound of theta in degree= ');
 pmin = input('The lower bound of phi in degree= ');
 pmax = input('The upper bound of phi in degree= ');
 
-% Increment values and radian conversion
-tinc = 2;
-pinc = 4;
-rad  = pi/180;
+% Angle vectors (convert to radians)
+theta = (tmin:tmax) * pi/180;
+phi   = (pmin:pmax) * pi/180;
 
-% Angle vectors
-theta1 = (tmin:tinc:tmax);
-phi1   = (pmin:pinc:pmax);
+% Angular increments
+dth = theta(2) - theta(1);
+dph = phi(2) - phi(1);
 
-% Convert to radians
-theta = theta1 .* rad;
-phi   = phi1 .* rad;
+[THETA,PHI] = meshgrid(theta,phi);
 
-% Create meshgrid
-[THETA, PHI] = meshgrid(theta, phi);
+% Field pattern
+x = input('The field pattern : E(THETA,PHI)= ');
+x = cos(THETA);
 
-% Field pattern input
-y1 = input('The field pattern: E(THETA,PHI)= ');
-v  = input('The field pattern: P(THETA,PHI)= ','s');
+% Power pattern
+v = input('The power pattern: P(THETA,PHI)= ','s');
+P = cos(THETA).^2;
 
-% Absolute value of field
-y = abs(y1);
+% Beam Area Calculation
+Prad = sum(sum(P .* sin(THETA))) * dth * dph;
 
-% Since omni antenna is constant, expand to matrix
-y = y * ones(size(THETA));
-
-% Maximum value
-ratio = max(max(y));
-
-% Convert spherical to Cartesian
-[X,Y,Z] = sph2cart(THETA, PHI, y);
-
-% Plot
-mesh(X,Y,Z);
-title('3 D Pattern','Color','b','FontName','Helvetica','FontSize',12,'FontWeight','demi');
-
+% Display Input Parameters
 fprintf('\n Input Parameters: \n-------------------- ');
-fprintf('\n Theta = %2.0f : %2.0f : %2.0f',tmin,tinc,tmax);
-fprintf('\n Phi   = %2.0f : %2.0f : %2.0f',pmin,pinc,pmax);
-fprintf('\n FIELD PATTERN : %s',v);
-fprintf('\n\n Output is shown in the figure below----------- ');
+fprintf('\n Theta =%2.0f',tmin);
+fprintf(' : %2.0f',dth*180/pi);
+fprintf(' : %2.0f',tmax);
+fprintf('\n Phi =%2.0f',pmin);
+fprintf(' : %2.0f',dph*180/pi);
+fprintf(' : %2.0f',pmax);
+fprintf('\n POWER PATTERN : %s',v)
+
+% Display Output
+fprintf('\n \n Output Parameters: \n-------------------- ');
+fprintf('\n BEAM AREA (steradians) = %3.2f',Prad);
 fprintf('\n');
