@@ -1,7 +1,7 @@
-#Plot
+# Plot
 <img width="926" height="522" alt="image" src="https://github.com/user-attachments/assets/a5b53fa4-bf81-4885-91bc-aaa0e908f443" />
-#Tasks
-##Increase Gateway Height by +5 m
+# Tasks
+## Increase Gateway Height by +5 m
 
 1)Does maximum LOS distance change?
 
@@ -17,7 +17,7 @@ Answer:
 
 3)Because link feasibility doesn't depend on gateway height
 
-##Increase Antenna Gain to 5 dBi
+## Increase Antenna Gain to 5 dBi
 
 1)How does the received power curve change?
 
@@ -33,7 +33,7 @@ Answer:
 
 3)Because gain increases effective radiated power and received signal strength without increasing noise, improving SNR and allowing longer communication distance.
 
-##Change Environment Exponent
+## Change Environment Exponent
 
 1)How does increasing n affect coverage?
 
@@ -49,7 +49,7 @@ Answer:
 
 3)Higher n represents more obstacles, reflections, scattering, absorption. These environmental losses dominate over moderate gain improvements.
 
-##Move Gateway Location (Fresnel Study)
+## Move Gateway Location (Fresnel Study)
 
 1)Where is Fresnel radius largest?
 
@@ -66,6 +66,6 @@ Answer:
 3)Diffraction loss increases, received power drops significantly, and the link may fail even if LOS visually exists.
 
 
-#Conclusion
+# Conclusion
 
 This study shows that antenna gain improves coverage by increasing received power uniformly across distance. However, environmental conditions have a much stronger effect on link performance because they control how fast the signal decays. Increasing antenna height mainly improves geometric line-of-sight but does not change received power in the log-distance model. Fresnel zone clearance is critical, especially at the midpoint, where obstruction causes maximum diffraction loss. Small design choices, such as antenna gain and placement, can significantly affect link reliability. Proper RF planning requires balancing geometry, environment, and link budget together rather than optimizing only one parameter.
