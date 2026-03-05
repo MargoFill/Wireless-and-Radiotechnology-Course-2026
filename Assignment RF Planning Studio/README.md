@@ -71,3 +71,5 @@ Answer:
 # Conclusion
 
 This study shows that antenna gain improves coverage by increasing received power uniformly across distance. However, environmental conditions have a much stronger effect on link performance because they control how fast the signal decays. Increasing antenna height mainly improves geometric line-of-sight but does not change received power in the log-distance model. Fresnel zone clearance is critical, especially at the midpoint, where obstruction causes maximum diffraction loss. Small design choices, such as antenna gain and placement, can significantly affect link reliability. Proper RF planning requires balancing geometry, environment, and link budget together rather than optimizing only one parameter.
+
+In practical wireless deployment, the environment (path loss exponent n) has the strongest impact on coverage, because obstacles, buildings, terrain, and scattering fundamentally determine how fast signal power decreases over distance.
