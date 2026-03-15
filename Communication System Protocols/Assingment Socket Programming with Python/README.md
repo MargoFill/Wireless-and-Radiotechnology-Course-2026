@@ -31,7 +31,9 @@ python client.py
 
 ## Client side
 
+![img](client_side_tcp.png)
 
 ## Serever side
 
+![img](server_side_tcp.png)
 
