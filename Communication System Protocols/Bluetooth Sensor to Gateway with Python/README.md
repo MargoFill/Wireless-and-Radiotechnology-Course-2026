@@ -11,5 +11,6 @@ This project demonstrates a basic TCP client–server communication system using
 4) Testing network applications across devices
 
 # Client side
-
+![img](client_side.png)
 # Server side
+![img](server_side.png)
