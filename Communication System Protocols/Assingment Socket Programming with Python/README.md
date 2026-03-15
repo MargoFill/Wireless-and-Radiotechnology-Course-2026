@@ -25,3 +25,13 @@ The server will start listening for incoming connections.
 Open another terminal window and run:
 
 python client.py
+
+
+# Output
+
+## Client side
+
+
+## Serever side
+
+
