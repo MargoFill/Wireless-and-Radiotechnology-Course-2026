@@ -10,6 +10,22 @@ This project demonstrates a basic TCP client–server communication system using
 
 4) Testing network applications across devices
 
+
+# How to Run the Project
+## 1. Start the Server
+
+Open a terminal in the project folder and run:
+
+python server.py
+
+The server will start listening for incoming connections.
+
+## 2. Start the Client
+
+Open another terminal window and run:
+
+python client.py
+
 # Client side
 ![img](client_side.png)
 # Server side
