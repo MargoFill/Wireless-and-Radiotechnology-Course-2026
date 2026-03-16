@@ -4,8 +4,8 @@ import requests
 broker = "broker.emqx.io"
 topic = "savonia/iot/temperature"
 
-TOKEN = "8227203567:AAHFs8zDXfW5cEG4FLAj2WDtRxC8Z1rkQZU"
-CHAT_ID = "600497660"
+TOKEN = "YOUR_TELEGRAM_TOKEN"
+CHAT_ID = "YOUR_CHAT_ID"
 
 threshold = 28
 
