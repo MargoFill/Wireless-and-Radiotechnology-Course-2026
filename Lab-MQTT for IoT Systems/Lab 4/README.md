@@ -43,4 +43,12 @@ savonia/iot/mareem
 
 # Short explanation of how the system works
 
+The system simulates an IoT monitoring pipeline with real-time alerting.
+
+A temperature sensor program running on Laptop 1 generates temperature data and sends it via a socket connection to an edge device on Laptop 2. The edge device processes this data and publishes it to an MQTT broker using a specific topic.
+
+A cloud subscriber (also on Laptop 1) listens to this MQTT topic. When a new temperature value is received, it checks whether the value exceeds a predefined threshold. If the temperature is too high, the system automatically sends a notification using a Telegram bot.
+
+This setup demonstrates how IoT systems can collect data, process it through edge devices, and trigger real-time alerts in the cloud.
+
 
