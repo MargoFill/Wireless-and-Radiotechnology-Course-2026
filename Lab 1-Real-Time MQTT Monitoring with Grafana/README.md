@@ -70,5 +70,5 @@ Why is MQTT useful for monitoring applications?
 
 What is the difference between live monitoring and historical storage?
 
--Live monitoring shows the data in real-time and historical storage just store the previous data so it can be viewed later
+Live monitoring shows the data in real-time and historical storage just store the previous data so it can be viewed later
 
