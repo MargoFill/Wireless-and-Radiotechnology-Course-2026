@@ -5,7 +5,10 @@ HOST = "0.0.0.0"
 PORT = 5000
 
 broker = "broker.emqx.io"
-topic = "savonia/iot/mareem28"
+topic1 = "savonia/iot/mareem28/temperature"
+topic2 = "savonia/iot/mareem28/humidity"
+topic3 = "savonia/iot/mareem28/light"
+
 
 mqtt_client = mqtt.Client()
 mqtt_client.connect(broker,1883)
@@ -31,9 +34,9 @@ while True:
 
     temperature, humidity, light = message.split(",")
 
-    mqtt_client.publish("savonia/iot/temperature", temperature)
-    mqtt_client.publish("savonia/iot/humidity", humidity)
-    mqtt_client.publish("savonia/iot/light", light)
+    mqtt_client.publish("savonia/iot/mareem28/temperature", temperature)
+    mqtt_client.publish("savonia/iot/mareem28/humidity", humidity)
+    mqtt_client.publish("savonia/iot/mareem28/light", light)
 
     print("Forwarded:", message)
 
