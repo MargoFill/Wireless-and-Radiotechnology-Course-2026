@@ -18,7 +18,7 @@ By running yolo_stream.py in Laptop B. If everything works, the stream should op
 
 # Which objects were detected
 
-2 persons, 1 chair, 1 TV, 2 cell phones
+2 persons, 1 chair, 1 TV
 
 # Issues occured:
 
