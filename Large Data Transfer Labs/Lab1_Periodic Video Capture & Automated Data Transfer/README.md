@@ -1,12 +1,12 @@
 # Who was sender and receiver
 
-## Sender: Margarita Filenko (Laptop A)
+Sender: Margarita Filenko (Laptop A)
 
-## Receiver: Arsenii Marchenko (Laptop B)
+Receiver: Arsenii Marchenko (Laptop B)
 
 # Receiver IP address:
 
-## 172.20.10.3
+172.20.10.3
 
 # Issues 
 
