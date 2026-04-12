@@ -71,3 +71,7 @@ Fitness trackers
 Device-to-device communication
 
 Bluetooth is useful because it is low power, widely supported, and easy to integrate with small IoT devices.
+
+## What is the difference between Bluetooth socket communication and WiFi socket communication in practice?
+
+Bluetooth socket communication is used for short-range, direct device-to-device connections that require pairing, consume low power, and offer lower data speeds, making them ideal for simple nearby interactions like wearables or sensors; in contrast, Wi-Fi socket communication works over a network using IP addresses, provides much higher speeds and longer range, consumes more power, and is suited for scalable, internet-style applications like web services, streaming, and cloud-connected devices.
