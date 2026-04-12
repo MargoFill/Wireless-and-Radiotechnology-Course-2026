@@ -50,3 +50,8 @@ A temperature sensor program running on Laptop 1 generates temperature data and 
 This setup demonstrates how IoT systems can collect data, process it through edge devices, and trigger real-time alerts in the cloud.
 
 
+# Why is MQTT useful for building monitoring and alert systems in IoT?
+
+MQTT is ideal for IoT monitoring and alerts because it provides lightweight, real-time, reliable, and scalable communication through a broker using the publish–subscribe paradigm.
+
+
